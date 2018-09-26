@@ -128,6 +128,11 @@ class JobApplication extends Component {
             type="submit"
             disabled={!this.state.isFormValid}
             value="Submit"
+            title={
+              this.state.isFormValid
+                ? "Click here to submit the form"
+                : "Complete the form before submitting"
+            }
           />
         </form>
       </Fragment>
